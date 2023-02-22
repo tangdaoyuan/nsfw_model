@@ -70,7 +70,7 @@ def classify_nd(model, nd_images):
     model_preds = model.predict(nd_images)
     # preds = np.argsort(model_preds, axis = 1).tolist()
     
-    categories = ['drawings', 'hentai', 'neutral', 'porn', 'sexy']
+    categories = ['drawings', 'porn', 'sexy']
 
     probs = []
     for i, single_preds in enumerate(model_preds):

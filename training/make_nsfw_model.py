@@ -51,7 +51,7 @@ from tensorflow.core.framework import attr_value_pb2
 from tensorflow.core.framework import graph_pb2
 from tensorflow.core.framework import node_def_pb2
 from tensorflow.keras import layers
-from tensorflow.keras.mixed_precision import experimental as mixed_precision
+# from tensorflow.keras.mixed_precision import experimental as mixed_precision
 from tensorflow.python.framework import dtypes
 from tensorflow.python.framework import ops
 from tensorflow.python.framework import tensor_util
@@ -67,7 +67,7 @@ import os
 import re
 import six
 import tempfile
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import tensorflow.keras.backend as K
 import tensorflow_hub as hub
 

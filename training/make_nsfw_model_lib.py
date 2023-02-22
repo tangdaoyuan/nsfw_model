@@ -27,7 +27,7 @@ from absl import app
 from absl import flags
 from absl import logging
 from tensorflow import keras
-from tensorflow.keras.mixed_precision import experimental as mixed_precision
+# from tensorflow.keras.mixed_precision import experimental as mixed_precision
 from tensorflow.core.framework import attr_value_pb2
 from tensorflow.core.framework import graph_pb2
 from tensorflow.core.framework import node_def_pb2
@@ -46,10 +46,9 @@ import os
 import re
 import six
 import tempfile
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import tensorflow.keras.backend as K
 import tensorflow_hub as hub
-
 
 _DEFAULT_IMAGE_URL = "https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz"
 
